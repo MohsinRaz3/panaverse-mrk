@@ -1,8 +1,6 @@
 import React from 'react'
-import { Box, Container, SimpleGrid, Heading, Text, Grid } from '@chakra-ui/react'
-import Image from 'next/image'
+import { Box, Container, Image, SimpleGrid, Heading, Text, Grid } from '@chakra-ui/react'
 import Link from 'next/link'
-import pana from '../../../public/panalogo.png'
 
 export default function Page() {
     const fontStyle = {
@@ -14,7 +12,7 @@ export default function Page() {
             <Container maxW={1400} sx={fontStyle} >
                 <SimpleGrid p='10' templateColumns={{ sm: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(4, 1fr)' }} spacing='30px' textAlign={{ sm: 'center', lg: 'start' }}>
                     <Box p='6' ><Heading as='h3' size='lg'>About Us</Heading>
-                        <Image src={pana} alt="Panaverse logo" width='80' height='90' />
+                        <Image mt={{ base: '5', lg: '5' }} mx={{ base: 'auto', lg: '0' }} src='/panalogo.png' alt="Panaverse logo" width='50' height='10' />
                         <Text pt='2' color='whiteAlpha.600'>Panaverse DAO is a movement to spread these technolgies globally. It is community of Web 3 and Metaverse developers, designers, trainers, startup founders and service providers.</Text>
                     </Box>
 
