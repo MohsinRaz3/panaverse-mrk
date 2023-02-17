@@ -9,9 +9,9 @@ export default function Page() {
     }
     return (
         <Box bg='blackAlpha.900'>
-            <Container maxW={1400} sx={fontStyle} >
-                <SimpleGrid p='10' templateColumns={{ sm: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(4, 1fr)' }} spacing='30px' textAlign={{ sm: 'center', lg: 'start' }}>
-                    <Box p='6' ><Heading as='h3' size='lg'>About Us</Heading>
+            <Box maxW='90%' sx={fontStyle} >
+                <SimpleGrid pt='10' templateColumns={{ sm: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(4, 1fr)' }} spacing='30px' alignItems='center' justifyContent='center' textAlign={{ sm: 'center', lg: 'start' }}>
+                    <Box p='6'><Heading as='h3' size='lg'>About Us</Heading>
                         <Image mt={{ base: '5', lg: '5' }} mx={{ base: 'auto', lg: '0' }} src='/panalogo.png' alt="Panaverse logo" width='50' height='10' />
                         <Text pt='2' color='whiteAlpha.600'>Panaverse DAO is a movement to spread these technolgies globally. It is community of Web 3 and Metaverse developers, designers, trainers, startup founders and service providers.</Text>
                     </Box>
@@ -43,7 +43,7 @@ export default function Page() {
                         </Grid>
                     </Box>
                 </SimpleGrid>
-            </Container>
+            </Box>
         </Box>
     )
 }

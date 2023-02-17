@@ -18,14 +18,13 @@ export default function Page() {
 
   return (
     <>    <Box bg="blackAlpha.800" shadow="lg">
-      <Container maxW={1400} >
+      <Container maxW='90%'>
         <SimpleGrid templateColumns={{ lg: "repeat(3, 1fr)", base: "repeat(2, 1fr)" }} spacing='30px' >
           <Box py={3} display={{ base: 'none', lg: "flex" }} >
             <Image
               src='/panalogo.png'
               alt="panaverse logo"
-              width={50}
-              height={10}
+              boxSize='50px'
             ></Image>
           </Box>
           <Flex display={{ base: 'none', lg: "flex" }}
@@ -36,10 +35,10 @@ export default function Page() {
             fontWeight="semibold"
           >
             <Link href="/">Home</Link>
-            <Link href="/Syllabus">Syllabus</Link>
-            <Link href="/Explore">Explore</Link>
-            <Link href="/About">About</Link>
-            <Link href="/Blogs">Blogs</Link>
+            <Link href="/syllabus">Syllabus</Link>
+            <Link href="/explore">Explore</Link>
+            <Link href="/about">About</Link>
+            <Link href="/blogs">Blogs</Link>
           </Flex>
           <Box px={10} p={18} display={{ base: 'none', lg: "initial" }} >
             <Button float="right" colorScheme="whiteAlpha" bg="blackAlpha.600" rounded='md' fontSize={{ base: '14px', md: '16px', lg: '18px' }}
@@ -67,15 +66,16 @@ export default function Page() {
               onClose={onClose}
             >
               <DrawerOverlay />
-              <DrawerContent bg='white'>
-                <DrawerCloseButton />
+              <DrawerContent bg='blackAlpha.900'>
+                <DrawerCloseButton color='white' />
 
 
-                <Flex h='35vh' m='auto' flexDir='column' justifyContent='space-between' align='center'>
-                  <Link href='/'> Home</Link>
-                  <Link href='/'> About</Link>
-                  <Link href='/'> Contact</Link>
-                  <Link href='/'> Syllabus</Link></Flex>
+                <Flex color='white' h='35vh' m='auto' flexDir='column' justifyContent='space-between' align='center'>
+                  <Link href="/">Home</Link>
+                  <Link href="/syllabus">Syllabus</Link>
+                  <Link href="/explore">Explore</Link>
+                  <Link href="/about">About</Link>
+                  <Link href="/blogs">Blogs</Link></Flex>
 
 
 
