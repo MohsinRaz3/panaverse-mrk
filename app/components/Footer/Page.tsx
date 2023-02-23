@@ -18,7 +18,7 @@ export default function Page() {
 
                     <Box p='6'>
                         <Heading as='h3' size='lg'>Important Links</Heading>
-                        <Grid pt='5' color='whiteAlpha.600'>
+                        <Grid pt='2' color='whiteAlpha.600'>
                             <Link href='/'>Home</Link>
                             <Link href='/blog'>Blog</Link>
                             <Link href='/syllabus'>Syllabus</Link>
@@ -28,7 +28,7 @@ export default function Page() {
                     </Box>
                     <Box p='6'>
                         <Heading as='h3' size='lg'>Social Links</Heading>
-                        <Grid pt='5' color='whiteAlpha.600'>
+                        <Grid pt='2' color='whiteAlpha.600'>
                             <Link href='/'>Facebook</Link>
                             <Link href='/'>Twitter</Link>
                             <Link href='/'>LinkedIn</Link>
@@ -36,7 +36,7 @@ export default function Page() {
                         </Grid></Box>
                     <Box p='6'>
                         <Heading as='h3' size='lg'>Contact us</Heading>
-                        <Grid pt='5' color='whiteAlpha.600'>
+                        <Grid pt='2' color='whiteAlpha.600'>
                             <Link href='/'>+01234567890</Link>
                             <Link href='/'>piaic@contact.com</Link>
                             <Link href='/'>Karachi, Pakistan</Link>
