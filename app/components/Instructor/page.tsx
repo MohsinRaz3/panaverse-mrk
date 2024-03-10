@@ -2,7 +2,7 @@ import React from 'react'
 import {
     Box, Container, Center, Text, Image, Heading, Flex
 } from '@chakra-ui/react'
-import { data } from '../../../pages/database/page'
+import { data } from '../../database/db'
 
 export default function page() {
     return (
